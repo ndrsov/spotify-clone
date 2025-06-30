@@ -1,3 +1,3 @@
 export default function Home() {
-  return <div>Sporify clone</div>;
+  return <div className="text-green-500">Spotify clone</div>;
 }
