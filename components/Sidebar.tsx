@@ -4,6 +4,7 @@ import { usePathname } from 'next/navigation';
 import React, { useMemo } from 'react';
 import { BiSearch } from 'react-icons/bi';
 import { HiHome } from 'react-icons/hi';
+import Box from './Box';
 
 interface SidebarProps {
   children: React.ReactNode;
@@ -30,7 +31,9 @@ const Sidebar: React.FC<SidebarProps> = ({ children }) => {
   );
   return (
     <div className="flex h-full">
-      <div className="hidden md:flex flex-col gap-y-2 bg-black h-full w-[300px] p-2"></div>
+      <div className="hidden md:flex flex-col gap-y-2 bg-black h-full w-[300px] p-2">
+        <Box>Sidebar Navigation</Box>
+      </div>
     </div>
   );
 };
